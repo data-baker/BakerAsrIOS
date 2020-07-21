@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35B828F824C6949C001A3323 /* DBASRFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B828F724C6949C001A3323 /* DBASRFramework.framework */; };
 		35D9B07723F39E3C003F120F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B07623F39E3C003F120F /* AppDelegate.m */; };
 		35D9B07A23F39E3C003F120F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B07923F39E3C003F120F /* SceneDelegate.m */; };
 		35D9B08223F39E40003F120F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D9B08123F39E40003F120F /* Assets.xcassets */; };
@@ -16,11 +17,11 @@
 		35D9B09623F39E72003F120F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B09123F39E72003F120F /* ViewController.m */; };
 		35D9B09723F39E72003F120F /* PCMDataPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B09323F39E72003F120F /* PCMDataPlayer.m */; };
 		35D9B09823F39E72003F120F /* DSAQPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9B09423F39E72003F120F /* DSAQPool.m */; };
-		35D9B09C23F39F39003F120F /* DBASRFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D9B09B23F39F39003F120F /* DBASRFramework.framework */; };
 		35D9B0B923F3A0BD003F120F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D9B0B823F3A0BD003F120F /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35B828F724C6949C001A3323 /* DBASRFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DBASRFramework.framework; sourceTree = "<group>"; };
 		35D9B07223F39E3C003F120F /* DBASRDemo_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBASRDemo_.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D9B07523F39E3C003F120F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		35D9B07623F39E3C003F120F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		35D9B09223F39E72003F120F /* DSAQPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAQPool.h; sourceTree = "<group>"; };
 		35D9B09323F39E72003F120F /* PCMDataPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCMDataPlayer.m; sourceTree = "<group>"; };
 		35D9B09423F39E72003F120F /* DSAQPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAQPool.m; sourceTree = "<group>"; };
-		35D9B09B23F39F39003F120F /* DBASRFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DBASRFramework.framework; sourceTree = "<group>"; };
 		35D9B09E23F3A046003F120F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		35D9B0A023F3A051003F120F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		35D9B0A223F3A05A003F120F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -59,8 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B828F824C6949C001A3323 /* DBASRFramework.framework in Frameworks */,
 				35D9B0B923F3A0BD003F120F /* libc++.tbd in Frameworks */,
-				35D9B09C23F39F39003F120F /* DBASRFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,7 @@
 		35D9B07423F39E3C003F120F /* DBASRDemo_ */ = {
 			isa = PBXGroup;
 			children = (
-				35D9B09B23F39F39003F120F /* DBASRFramework.framework */,
+				35B828F724C6949C001A3323 /* DBASRFramework.framework */,
 				35D9B07523F39E3C003F120F /* AppDelegate.h */,
 				35D9B07623F39E3C003F120F /* AppDelegate.m */,
 				35D9B07823F39E3C003F120F /* SceneDelegate.h */,

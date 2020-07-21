@@ -27,8 +27,17 @@
     [super viewDidLoad];
     self.client = [DBASRClient sharedInstance];
     self.client.timeOut = 15;
-    // 私有化部署的时候，这个地方不填
-    [self.client setupClientId:@"caef0063-adbb-4395-9198-4b4eff2a167b" clientSecret:@"YTEwMjEzMDktNTg1NS00ZmVjLWJiOGYtNmYwNzBhMzA5MzAy"];
+    
+     #error 请设置授权信息，按照以下TODO操作（设置完成后删除本行注释即可运行）
+    //TODO: 授权信息，@1和@2 只能选择一个；
+    //@1 公有云设置，请联系标贝（北京）科技有限公司获取ClientId和ClientSecret;
+    
+    [self.client setupClientId:@"" clientSecret:@"" failureHandler:^(DBFailureModel * _Nullable error) {
+           [self appendLogMessage:[NSString stringWithFormat:@"error:%@",error.message]];
+       }];
+    
+        //@2 私有化部署,请联系标贝（北京）科技有限公司获取私有化URL
+    //    [self.client setupPrivateDeploymentURL:@""];
     self.pcmIndex = 0;
     self.recordData = [NSMutableData data];
     self.pcmPlayer = [[PCMDataPlayer alloc]init];
@@ -64,11 +73,11 @@
 
 
 - (void)onResult:(NSArray<NSString *> *)nBest uncertain:(NSArray<NSString *> *)uncertain isLast:(BOOL)isLast {
-    if (uncertain.count > 1) {
+  if (uncertain.count > 1) {
         [self showRecognizeMessag:[NSString stringWithFormat:@"nBestFisrt:%@ uncertainFirst:%@ end:%@",nBest[0],uncertain[0],@(isLast)]];
     }else {
-        [self showRecognizeMessag:[NSString stringWithFormat:@"nBestFisrt:%@ end:%@",nBest[0],@(isLast)]];
-        
+        [self showRecognizeMessag:[NSString stringWithFormat:@"%@",nBest[0]]];
+
     }
     
 }
@@ -79,7 +88,7 @@
     static NSInteger count = 0;
     count++;
     if (count == 10) {
-        [self appendLogMessage:[NSString stringWithFormat:@"volume:%@ dataLen:%@",@(volume),@(data.length)]];
+        [self appendLogMessage:[NSString stringWithFormat:@"音量:%@",@(volume)]];
         count=0;
     }
 }

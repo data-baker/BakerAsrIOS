@@ -6,7 +6,11 @@
 	<dict>
 		<key>Headers/DBASRClient.h</key>
 		<data>
-		03q79Yoq32r9XHYxzHCi6cdgWg4=
+		SFSjgU4DsgKMvZ5KtaHRumwjy1E=
+		</data>
+		<key>Headers/DBFailureModel.h</key>
+		<data>
+		7ATa9eFpWiZD9LxExUkipGqaQFc=
 		</data>
 		<key>Headers/DBPublicEumerte.h</key>
 		<data>
@@ -14,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sMIzpvARuA2KXjSjF1FPmGsL8Og=
+		1jRGxaPwm/aX+R68tsqdQzVD/8I=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -23,11 +27,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			03q79Yoq32r9XHYxzHCi6cdgWg4=
+			SFSjgU4DsgKMvZ5KtaHRumwjy1E=
 			</data>
 			<key>hash2</key>
 			<data>
-			ll0fADYWG31rPU7pzPi6OeeQnwt/gxM+M0tDy0DxlqM=
+			AMO57nobE9fyhXZmJOrPwcjoWthOON52781ZgzM62I0=
+			</data>
+		</dict>
+		<key>Headers/DBFailureModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7ATa9eFpWiZD9LxExUkipGqaQFc=
+			</data>
+			<key>hash2</key>
+			<data>
+			05GecB8U2zdntqcfJq4VOh+9Te85TQvEdYCURRRXSoc=
 			</data>
 		</dict>
 		<key>Headers/DBPublicEumerte.h</key>

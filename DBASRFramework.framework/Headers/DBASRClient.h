@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "DBPublicEumerte.h"
+#import "DBFailureModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
+typedef void(^FailureHandler)(DBFailureModel * _Nullable error);
 
 // @protocol - MVoiceRecognitionClientDelegate
 // @brief - 语音识别工作状态通知
@@ -55,7 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (DBASRClient *)sharedInstance;
 
 // 初始化SDK的clientId，和clientSecret
-- (void)setupClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret;
+- (void)setupClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret failureHandler:(FailureHandler)handler;
 
 
 // 私有化部署时不需要设置clientId和clientSecret,直接设置url即可
